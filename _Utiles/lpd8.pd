@@ -1,0 +1,5 @@
+#N canvas 324 344 450 300 10;
+#X obj 213 149 ctlin \$1;
+#X text 275 152 valeurs valide de 1 a 8;
+#X obj 214 196 outlet;
+#X connect 0 0 2 0;

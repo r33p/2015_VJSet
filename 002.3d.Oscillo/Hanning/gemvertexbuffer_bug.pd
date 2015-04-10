@@ -1,0 +1,71 @@
+#N canvas 584 119 1141 718 10;
+#X obj 626 35 table X8 8;
+#X obj 626 55 table Y8 8;
+#X obj 626 75 table Z8 8;
+#X obj 124 -103 gemhead;
+#X obj 124 -154 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 124 -41 rotateXYZ;
+#X floatatom 164 -67 5 0 0 0 - - -, f 5;
+#X msg 383 405 \; Z8 0 1 \; Z8 1 1 \; Z8 2 1 \; Z8 3 1 \; Z8 4 -1 \;
+Z8 5 -1 \; Z8 6 -1 \; Z8 7 -1;
+#X obj 124 175 gemvertexbuffer 8;
+#X text 476 359 bug : gemvertexbuffer;
+#X obj 383 388 loadbang;
+#X obj 303 -89 abstractions/gemwin;
+#X msg 322 -115 destroy;
+#X msg 259 158 posX X8 \, posY Y8 \, posZ Z8;
+#X msg 304 405 \; Y8 0 1 \; Y8 1 1 \; Y8 2 -1 \; Y8 3 -1 \; Y8 4 -1
+\; Y8 5 -1 \; Y8 6 1 \; Y8 7 1;
+#X msg 229 405 \; X8 0 -1 \; X8 1 1 \; X8 2 1 \; X8 3 -1 \; X8 4 -1
+\; X8 5 1 \; X8 6 1 \; X8 7 -1;
+#X text 475 501 - posZ is not updated correctly : the last 2 entries
+are not updated from table (and reset to 0);
+#X text 477 466 - posY is not updated correctly : the last entry is
+not updated from table (and reset to 0);
+#X text 476 442 - posX is updated correctly (from the table data);
+#X obj 22 134 loadbang;
+#X obj 624 119 table XYZ 24;
+#X text 207 471 -;
+#X msg 58 410 \; XYZ 0 -1 \; XYZ 1 1 \; XYZ 2 1 \; XYZ 3 1 \; XYZ 4
+1 \; XYZ 5 1 \; XYZ 6 1 \; XYZ 7 -1 \; XYZ 8 1 \; XYZ 9 -1 \; XYZ 10
+-1 \; XYZ 11 1 \; XYZ 12 -1 \; XYZ 13 -1 \; XYZ 14 -1 \; XYZ 15 1 \;
+XYZ 16 -1 \; XYZ 17 -1 \; XYZ 18 1 \; XYZ 19 1 \; XYZ 20 -1 \; XYZ
+21 -1 \; XYZ 22 1 \; XYZ 23 -1;
+#X msg 212 119 position XYZ;
+#X obj 58 393 loadbang;
+#X msg 57 348 position XYZ;
+#X msg 231 347 posX X8 \, posY Y8 \, posZ Z8;
+#X text 303 317 bug;
+#X obj 229 93 route 0 1;
+#X text 140 268 8 vertices for a cube;
+#X obj 229 25 tgl 15 0 empty empty bug|ok 17 7 0 10 -257985 -1 -1 0
+1;
+#X msg 303 -141 dimen 640 480 \, create \, 1;
+#X msg 23 158 draw line;
+#X text 74 318 ok;
+#X text 478 419 when using posX posY posZ :;
+#X obj 229 64 pack f f;
+#X obj 124 -10 t a b;
+#X msg 282 7 1;
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;
+#X connect 5 0 36 0;
+#X connect 6 0 5 2;
+#X connect 10 0 15 0;
+#X connect 10 0 14 0;
+#X connect 10 0 7 0;
+#X connect 12 0 11 0;
+#X connect 13 0 8 0;
+#X connect 19 0 32 0;
+#X connect 23 0 8 0;
+#X connect 24 0 22 0;
+#X connect 28 0 23 0;
+#X connect 28 1 13 0;
+#X connect 30 0 35 0;
+#X connect 31 0 11 0;
+#X connect 32 0 8 0;
+#X connect 35 0 28 0;
+#X connect 36 0 8 0;
+#X connect 36 1 37 0;
+#X connect 37 0 35 1;
