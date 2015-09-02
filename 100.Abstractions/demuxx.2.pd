@@ -1,0 +1,54 @@
+#N canvas 1 102 1344 744 10;
+#X obj 159 53 inlet;
+#X obj 268 51 inlet;
+#X obj 268 251 spigot;
+#X obj 159 255 spigot;
+#X obj 366 48 inlet;
+#X obj 366 250 spigot;
+#X obj 759 46 inlet;
+#X obj 759 78 t a;
+#X obj 366 323 t a;
+#X obj 366 366 outlet;
+#X obj 471 48 inlet;
+#X obj 471 250 spigot;
+#X obj 577 46 inlet;
+#X obj 577 248 spigot;
+#X obj 759 115 sel 0 1 2 3 4;
+#X msg 829 226 \; \$0-zaza0 0 \; \$0-zaza1 0 \; \$0-zaza2 0 \; \$0-zaza3
+0 \; \$0-zaza4 1 \;;
+#X msg 811 313 \; \$0-zaza0 0 \; \$0-zaza1 0 \; \$0-zaza2 0 \; \$0-zaza3
+1 \; \$0-zaza4 0 \;;
+#X msg 794 400 \; \$0-zaza0 0 \; \$0-zaza1 0 \; \$0-zaza2 1 \; \$0-zaza3
+0 \; \$0-zaza4 0 \;;
+#X msg 776 485 \; \$0-zaza0 0 \; \$0-zaza1 1 \; \$0-zaza2 0 \; \$0-zaza3
+0 \; \$0-zaza4 0 \;;
+#X msg 758 580 \; \$0-zaza0 1 \; \$0-zaza1 0 \; \$0-zaza2 0 \; \$0-zaza3
+0 \; \$0-zaza4 0 \;;
+#X obj 406 220 r \$0-zaza2;
+#X obj 510 220 r \$0-zaza3;
+#X obj 616 218 r \$0-zaza4;
+#X obj 307 223 r \$0-zaza1;
+#X obj 198 226 r \$0-zaza0;
+#X connect 0 0 3 0;
+#X connect 1 0 2 0;
+#X connect 2 0 8 0;
+#X connect 3 0 8 0;
+#X connect 4 0 5 0;
+#X connect 5 0 8 0;
+#X connect 6 0 7 0;
+#X connect 7 0 14 0;
+#X connect 8 0 9 0;
+#X connect 10 0 11 0;
+#X connect 11 0 8 0;
+#X connect 12 0 13 0;
+#X connect 13 0 8 0;
+#X connect 14 0 19 0;
+#X connect 14 1 18 0;
+#X connect 14 2 17 0;
+#X connect 14 3 16 0;
+#X connect 14 4 15 0;
+#X connect 20 0 5 1;
+#X connect 21 0 11 1;
+#X connect 22 0 13 1;
+#X connect 23 0 2 1;
+#X connect 24 0 3 1;

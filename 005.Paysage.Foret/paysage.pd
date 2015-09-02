@@ -1,4 +1,4 @@
-#N canvas 24 171 1364 706 10;
+#N canvas 22 179 1364 706 10;
 #X msg 236 665 draw point;
 #X obj 232 639 loadbang;
 #X obj 361 -88 tgl 15 0 empty empty sphere 17 7 0 10 -257985 -1 -1
@@ -81,6 +81,7 @@
 -1;
 #X obj 434 140 bng 15 250 50 0 empty empty empty 17 7 0 10 -1 -1 -1
 ;
+#X msg 98 672 draw line;
 #X connect 0 0 3 0;
 #X connect 1 0 0 0;
 #X connect 2 0 36 1;
@@ -149,4 +150,5 @@
 #X connect 69 0 61 0;
 #X connect 70 0 60 0;
 #X connect 71 0 62 0;
+#X connect 72 0 3 0;
 #X coords 0 706 1 705 256 17 0;

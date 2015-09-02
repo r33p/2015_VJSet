@@ -1,0 +1,126 @@
+#N canvas 768 92 1289 665 10;
+#X declare -path ./100.Abstractions;
+#X declare -path /home/rep/LIVE/Abstractions;
+#X declare -path ../100.Abstractions/;
+#X declare -path ./100.Effets.glsl;
+#X declare -lib cyclone;
+#X declare -lib pmpd;
+#X obj 37 68 declare -path ./100.Abstractions;
+#X obj 37 41 declare -path /home/rep/LIVE/Abstractions;
+#X obj 98 202 tgl 15 0 empty empty empty 17 7 0 10 -4034 -1 -1 0 1
+;
+#X obj 83 202 tgl 15 0 empty empty empty 17 7 0 10 -4034 -1 -1 1 1
+;
+#X obj 83 176 LIVE.window;
+#X floatatom 287 155 5 0 0 0 - - -, f 5;
+#X obj 83 157 tgl 15 0 empty createwindow createwindow 17 7 0 10 -262144
+-1 -13381 1 1;
+#X obj 486 51 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 486 133 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 486 213 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 491 518 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 589 134 5 0 0 0 - - -, f 5;
+#X obj 577 100 notein;
+#X obj 598 117 f;
+#X obj 560 100 bng 17 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 565 52 5 0 0 0 - - -, f 5;
+#X obj 553 18 notein;
+#X obj 574 35 f;
+#X obj 536 18 bng 17 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 614 214 5 0 0 0 - - -, f 5;
+#X obj 593 180 notein;
+#X obj 614 197 f;
+#X obj 576 180 bng 17 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 591 519 5 0 0 0 - - -, f 5;
+#X obj 579 485 notein;
+#X obj 600 502 f;
+#X obj 562 485 bng 17 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 642 296 5 0 0 0 - - -, f 5;
+#X obj 627 262 notein;
+#X obj 648 279 f;
+#X obj 610 262 bng 17 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 490 413 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 644 430 5 0 0 0 - - -, f 5;
+#X obj 632 396 notein;
+#X obj 653 413 f;
+#X obj 615 396 bng 17 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 486 295 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 624 39 s cubeReset;
+#X obj 624 18 bng 15 250 50 0 empty empty empty 17 7 0 10 -204786 -1
+-1;
+#X obj 486 341 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 491 533 001.2d.Masques/clap;
+#X obj 486 66 002.3d.Cube/cube;
+#X obj 486 148 001.2d.Rayure/rayure;
+#X obj 486 228 001.2d.Spirale/fildefer;
+#X obj 486 310 005.Paysage.Foret/montagnes;
+#X obj 486 356 ./005.Paysage.Foret/paysage;
+#X obj 490 444 ./0001.2d.Bonhomme/bonhomme;
+#X obj 82 451 s tutututu;
+#X obj 82 428 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 182 302 s SCALEFB;
+#X floatatom 182 286 5 0 0 0 - - -, f 5;
+#X obj 131 302 s YFB;
+#X obj 82 302 s XFB;
+#X floatatom 131 285 5 0 0 0 - - -, f 5;
+#X floatatom 82 285 5 0 0 0 - - -, f 5;
+#X msg 131 265 0;
+#X obj 82 338 tempo;
+#X obj 83 217 100.Fenetre/FrameBuffer.render.simple;
+#X obj 37 -22 declare -lib cyclone;
+#X obj 37 7 declare -lib pmpd;
+#X connect 2 0 57 1;
+#X connect 3 0 57 0;
+#X connect 6 0 4 0;
+#X connect 7 0 41 0;
+#X connect 8 0 42 0;
+#X connect 9 0 43 0;
+#X connect 10 0 40 0;
+#X connect 11 0 42 1;
+#X connect 12 0 13 1;
+#X connect 13 0 11 0;
+#X connect 14 0 13 0;
+#X connect 15 0 41 1;
+#X connect 16 0 17 1;
+#X connect 17 0 15 0;
+#X connect 18 0 17 0;
+#X connect 19 0 43 1;
+#X connect 20 0 21 1;
+#X connect 21 0 19 0;
+#X connect 22 0 21 0;
+#X connect 23 0 40 1;
+#X connect 24 0 25 1;
+#X connect 25 0 23 0;
+#X connect 26 0 25 0;
+#X connect 27 0 44 1;
+#X connect 28 0 29 1;
+#X connect 29 0 27 0;
+#X connect 30 0 29 0;
+#X connect 31 0 46 0;
+#X connect 32 0 46 1;
+#X connect 33 0 34 1;
+#X connect 34 0 32 0;
+#X connect 35 0 34 0;
+#X connect 36 0 44 0;
+#X connect 38 0 37 0;
+#X connect 39 0 45 0;
+#X connect 48 0 47 0;
+#X connect 50 0 49 0;
+#X connect 53 0 51 0;
+#X connect 54 0 52 0;
+#X connect 55 0 53 0;
+#X connect 56 0 48 0;

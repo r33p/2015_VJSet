@@ -1,4 +1,4 @@
-#N canvas 345 -40 1585 820 10;
+#N canvas 8 86 1585 813 10;
 #X obj 309 -318 inlet;
 #N canvas 366 625 268 186 stuff 0;
 #X obj 13 20 loadbang;
@@ -23,7 +23,7 @@
 #X connect 8 0 9 0;
 #X connect 9 0 2 0;
 #X restore 357 156 pd stuff;
-#X obj 433 156 link \$0-lia 0 1 0 200;
+#X obj 413 153 link \$0-lia 0 1 0 200;
 #X obj 557 338 translateXYZ;
 #X obj 433 75 -;
 #X obj 489 34 / 2;
@@ -36,7 +36,7 @@
 #X obj 738 21 random;
 #X msg 537 -4 setK 1 \, setD 0 \, setD2 200;
 #X obj 189 193 rotateXYZ;
-#X obj 1 156 link \$0-lia 0 1 0 200;
+#X obj 14 161 link \$0-lia 0 1 0 200;
 #X obj 558 771 cube;
 #X obj 433 -187 r boumTransX;
 #X obj 1 -170 r boumRotY;
@@ -60,7 +60,7 @@
 #X obj 96 -148 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 558 794 translateXYZ 0 0 1;
-#X obj 603 -234 r YY;
+#X obj 638 236 r YY;
 #X obj 96 -170 r GLISSADEHEAD;
 #X text 833 238 chargemebt des textures toutes les 10 secondes;
 #X obj 821 243 cnv 10 10 10 empty empty empty 20 12 0 14 -258113 -66577
@@ -80,24 +80,24 @@
 #X msg 217 -123 set 60;
 #X obj 189 -99 gemhead 60;
 #X obj 711 577 t a;
-#X obj 541 989 rotateXYZ;
-#X obj 541 1060 translateXYZ;
-#X obj 541 1084 cube;
-#X msg 454 1067 draw line;
-#X obj 454 1047 loadbang;
-#X obj 541 1160 rectangle;
-#X obj 541 1122 translateXYZ 0 0 1;
-#X obj 694 909 r boumTransX;
-#X obj 694 1031 line;
-#X obj 631 1006 line;
-#X obj 575 967 line;
-#X obj 575 926 random 360;
-#X obj 694 990 random 10;
-#X obj 631 965 random 10;
-#X msg 631 986 \$1 500;
-#X msg 694 1011 \$1 500;
-#X msg 575 947 \$1 500;
-#X obj 541 893 t a;
+#X obj 558 935 rotateXYZ;
+#X obj 558 1006 translateXYZ;
+#X obj 558 1030 cube;
+#X msg 471 1013 draw line;
+#X obj 471 993 loadbang;
+#X obj 558 1106 rectangle;
+#X obj 558 1068 translateXYZ 0 0 1;
+#X obj 711 855 r boumTransX;
+#X obj 711 977 line;
+#X obj 648 952 line;
+#X obj 592 913 line;
+#X obj 592 872 random 360;
+#X obj 711 936 random 10;
+#X obj 648 911 random 10;
+#X msg 648 932 \$1 500;
+#X msg 711 957 \$1 500;
+#X msg 592 893 \$1 500;
+#X obj 558 839 t a;
 #X obj 337 72 t a;
 #N canvas 791 104 445 299 preset 0;
 #X msg 36 193 setK 0.05 \, setD 0 \, setD2 30;
@@ -122,7 +122,7 @@
 #X restore 318 -242 pd preset;
 #X obj 380 -299 loadbang;
 #X obj 380 -277 f 1;
-#X obj 580 156 mass \$0-masse 1000 0;
+#X obj 574 154 mass \$0-masse 1000 0;
 #X obj 891 156 mass \$0-masse 1000 0;
 #X obj 449 -263 r preset_pmpd;
 #X obj 506 247 * 10;
@@ -169,7 +169,7 @@
 #X restore 280 958 pd ligne;
 #X obj 189 -31 translateXYZ 0 0 -10;
 #X obj 557 661 pix_grey;
-#X obj 223 155 mass \$0-masse 500 0;
+#X obj 260 156 mass \$0-masse 500 0;
 #X obj 296 237 vsl 15 128 0 360 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 189 -69 scaleXYZ 3 3 3;
