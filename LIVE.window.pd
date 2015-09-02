@@ -1,4 +1,4 @@
-#N canvas 29 177 1345 701 10;
+#N canvas 21 198 1345 701 10;
 #X obj 597 306 b;
 #X obj 597 218 bng 15 250 50 0 empty createwindow create 17 7 0 10
 -262144 -1 -4034;
@@ -69,9 +69,9 @@ offset 10 30 \, create \, 1;
 #X msg 392 408 color 0.5 0.5 0.5;
 #X msg 819 502 FSAA 14 \, color 0 0 0 \, title megabestoff \, frame
 60 \, border 1 \, offset 1600 0 \, dimen 576 360 \, create \, 1;
-#X obj 639 578 abstractions/gemwin 20;
+#X obj 639 578 gemwin 20;
 #X msg 658 404 FSAA 14 \, color 0 0 0 \, title megabestoff \, frame
-60 \, border 0 \, offset 1600 0 \, dimen 1440 900 \, create \, 1;
+60 \, border 1 \, offset 1600 0 \, dimen 800 400 \, create \, 1;
 #X connect 0 0 52 0;
 #X connect 1 0 0 0;
 #X connect 2 0 6 0;

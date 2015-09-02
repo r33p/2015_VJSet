@@ -1,4 +1,4 @@
-#N canvas 1 86 1598 667 10;
+#N canvas -56 155 1740 667 10;
 #X declare -path ./100.Abstractions;
 #X declare -path /home/rep/LIVE/Abstractions;
 #X declare -lib zexy;
@@ -6,7 +6,7 @@
 #X declare -path ../100.Abstractions/;
 #X obj 73 73 declare -path ./100.Abstractions;
 #X obj 1012 602 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 537 292 s SCALEFB;
 #X obj 408 292 s XFB;
 #X obj 473 292 s YFB;
@@ -24,7 +24,7 @@
 #X obj 222 568 cnv 15 150 25 empty empty empty 20 12 0 14 -257985 -66577
 0;
 #X obj 231 574 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 62 1;
+-1 -1 2540 1;
 #X obj 228 615 s blur;
 #X msg 228 552 0.2;
 #X obj 228 533 loadbang;
@@ -580,9 +580,9 @@ black red;
 -1 -1 0 1;
 #X floatatom 78 422 5 0 0 0 - - -, f 5;
 #X obj 78 399 r createwindow;
-#X obj 93 252 tgl 15 0 empty empty empty 17 7 0 10 -4034 -1 -1 1 1
+#X obj 93 252 tgl 15 0 empty empty empty 17 7 0 10 -4034 -1 -1 0 1
 ;
-#X obj 78 252 tgl 15 0 empty empty empty 17 7 0 10 -4034 -1 -1 1 1
+#X obj 78 252 tgl 15 0 empty empty empty 17 7 0 10 -4034 -1 -1 0 1
 ;
 #X obj 78 226 LIVE.window;
 #X obj 78 267 100.Fenetre/FrameBuffer.render;
@@ -631,9 +631,9 @@ black red;
 -1 -1 9;
 #X obj 1007 336 100.Fenetre/feedback2.audiocontrol;
 #X obj 1263 379 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 6993 1;
+-1 -1 0 1;
 #X obj 1007 321 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
+0 1;
 #X obj 1263 353 t f;
 #X floatatom 1226 322 5 0 0 0 - - -, f 5;
 #X obj 1226 279 loadbang;
@@ -679,6 +679,31 @@ black red;
 #X obj 726 55 toggle2;
 #X obj 275 227 hradio 15 1 0 5 empty empty empty 0 -8 0 10 -262144
 -1 -1 1;
+#X obj 1337 -334 gemhead;
+#X obj 1337 40 gemlist;
+#X obj 1337 21 until;
+#X obj 1337 -17 t b a;
+#X obj 1337 87 rotateXYZ 0 0 20;
+#X floatatom 1382 140 5 0 0 0 - - -, f 5;
+#X obj 1337 112 separator;
+#X msg 1247 202 draw line;
+#X obj 1337 219 rectangle 0.03 0.0015;
+#X obj 1337 -63 rotateXYZ 0 90 0;
+#X floatatom 1409 -192 5 0 0 0 - - -, f 5;
+#X obj 1446 -84 line;
+#X obj 1446 -158 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+1 1;
+#X obj 1446 -141 metro 6000;
+#X obj 1337 -237 gemlist;
+#X obj 1337 -257 until;
+#X obj 1337 -298 t b a;
+#X floatatom 1409 196 5 0 0 0 - - -, f 5;
+#X floatatom 1481 200 5 0 0 0 - - -, f 5;
+#X msg 1446 -103 \$1 6000;
+#X obj 1337 161 translateXYZ 3.5 0 0;
+#X obj 1446 -122 random 90;
+#X msg 1337 2 9;
+#X msg 1337 -277 6;
 #X connect 1 0 31 0;
 #X connect 5 0 3 0;
 #X connect 6 0 4 0;
@@ -799,3 +824,28 @@ black red;
 #X connect 157 0 97 0;
 #X connect 158 0 104 0;
 #X connect 159 0 83 3;
+#X connect 160 0 176 0;
+#X connect 161 0 164 0;
+#X connect 162 0 161 0;
+#X connect 163 0 182 0;
+#X connect 163 1 161 1;
+#X connect 164 0 166 0;
+#X connect 165 0 180 1;
+#X connect 166 0 180 0;
+#X connect 167 0 168 0;
+#X connect 169 0 163 0;
+#X connect 170 0 169 2;
+#X connect 171 0 169 3;
+#X connect 172 0 173 0;
+#X connect 173 0 181 0;
+#X connect 174 0 169 0;
+#X connect 175 0 174 0;
+#X connect 176 0 183 0;
+#X connect 176 1 174 1;
+#X connect 177 0 168 1;
+#X connect 178 0 168 2;
+#X connect 179 0 171 0;
+#X connect 180 0 168 0;
+#X connect 181 0 179 0;
+#X connect 182 0 162 0;
+#X connect 183 0 175 0;
