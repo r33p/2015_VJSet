@@ -1,4 +1,4 @@
-#N canvas 396 95 1082 782 10;
+#N canvas 394 104 1082 782 10;
 #X obj 191 465 realtime;
 #X obj 244 251 bng 12 250 50 0 empty empty empty 17 7 0 10 -228856
 -1 -1;
@@ -17,7 +17,7 @@
 #X obj 244 440 b;
 #X obj 263 740 outlet;
 #X obj 206 264 bng 8 250 50 0 empty empty empty 17 7 0 9 -1 -1 -1;
-#X obj 214 264 cnv 7 42 7 empty BPM BPM:389 0 4 0 8 -191407 -1 0;
+#X obj 214 264 cnv 7 42 7 empty BPM BPM:141 0 4 0 8 -191407 -1 0;
 #X obj 274 712 s BPM;
 #X msg 274 692 label \$1;
 #X obj 274 672 makefilename BPM:%d;
@@ -40,6 +40,8 @@ un BPM soius forme de chiffre;
 #X text 337 591 ms 2 bpm;
 #X obj 454 249 notein;
 #X obj 454 271 route 1 2 3 4 5;
+#X obj 744 428 QuartTemps;
+#X obj 744 399 bpmgen;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;
 #X connect 1 0 10 0;

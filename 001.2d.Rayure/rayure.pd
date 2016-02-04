@@ -1,4 +1,4 @@
-#N canvas 669 95 670 786 10;
+#N canvas 667 104 670 786 10;
 #X obj 99 35 r rayurejaune;
 #X obj 99 398 rotateXYZ 0 0 67;
 #X obj 99 217 translateXYZ 0 0 -4;
@@ -40,6 +40,7 @@
 #X msg 142 175 0.7 \, -0.7 70;
 #X obj 308 58 t b;
 #X obj 308 123 t b;
+#X floatatom 526 685 5 0 0 0 - - -, f 5;
 #X connect 0 0 29 0;
 #X connect 1 0 11 0;
 #X connect 2 0 4 0;
@@ -82,3 +83,4 @@
 #X connect 35 0 36 0;
 #X connect 36 0 34 0;
 #X connect 36 0 28 0;
+#X connect 37 0 21 0;

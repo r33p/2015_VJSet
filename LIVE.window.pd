@@ -1,4 +1,4 @@
-#N canvas 21 198 1345 701 10;
+#N canvas 47 189 1345 701 10;
 #X obj 597 306 b;
 #X obj 597 218 bng 15 250 50 0 empty createwindow create 17 7 0 10
 -262144 -1 -4034;
@@ -64,21 +64,22 @@ offset 10 30 \, create \, 1;
 #X msg 423 275 color \$1 \$1 \$1;
 #X obj 457 228 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X msg 597 455 FSAA 5 \, color 0 0 0 \, title a \, frame 60 \, border
-1 \, offset 1600 0 \, dimen 960 540 \, create \, 1;
 #X msg 392 408 color 0.5 0.5 0.5;
 #X msg 819 502 FSAA 14 \, color 0 0 0 \, title megabestoff \, frame
 60 \, border 1 \, offset 1600 0 \, dimen 576 360 \, create \, 1;
-#X obj 639 578 gemwin 20;
-#X msg 658 404 FSAA 14 \, color 0 0 0 \, title megabestoff \, frame
-60 \, border 1 \, offset 1600 0 \, dimen 800 400 \, create \, 1;
+#X obj 640 578 abstractions/gemwin 20;
+#X msg 597 455 FSAA 5 \, color 0 0 0 \, title a \, frame 30 \, border
+1 \, offset 1600 0 \, dimen 960 540 \, create \, 1;
+#X msg 660 400 FSAA 14 \, color 0 0 0 \, title 53pVisuals \, frame
+30 \, border 0 \, offset 1600 0 \, dimen 1280 1024 \, create \, cursor
+0 \, 1;
 #X connect 0 0 52 0;
 #X connect 1 0 0 0;
 #X connect 2 0 6 0;
 #X connect 3 0 5 0;
 #X connect 4 0 2 0;
 #X connect 5 0 6 0;
-#X connect 9 0 51 0;
+#X connect 9 0 50 0;
 #X connect 21 0 22 0;
 #X connect 22 0 34 0;
 #X connect 24 0 21 0;
@@ -98,5 +99,5 @@ offset 10 30 \, create \, 1;
 #X connect 47 0 46 0;
 #X connect 48 0 8 0;
 #X connect 49 0 8 0;
-#X connect 50 0 8 0;
+#X connect 51 0 8 0;
 #X connect 52 0 8 0;
